@@ -103,7 +103,7 @@ export class FootballAPI {
 
       const predictions: MatchPrediction[] = []
 
-      for (const match of futureFixtures.slice(0, 5)) {
+      for (const match of futureFixtures.slice(0, 10)) {
         // Limit to 5 matches
         try {
           const [homeStats, awayStats] = await Promise.all([
